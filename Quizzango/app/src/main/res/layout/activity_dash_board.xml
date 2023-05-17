@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="@drawable/background"
+    tools:context=".DashBoard_Activity">
+
+
+    <TextView
+        android:id="@+id/TQ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="TextView"
+        android:textColor="#880E0B"
+        android:textSize="40sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:id="@+id/QA"
+        >
+
+        <TextView
+            android:id="@+id/Ques"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textAlignment="center"
+            android:text="This will be the question"
+            >
+
+        </TextView>
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/white"
+            android:text="Ans A"
+            android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:text="Ans B" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:text="Ans C" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:text="Ans D" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/QA"
+        android:layout_marginTop="20dp"
+        android:text="Submit" />
+</RelativeLayout>
